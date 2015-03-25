@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/StevieBAudioBook.iml" filepath="$PROJECT_DIR$/StevieBAudioBook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularImageView/circularImageView.iml" filepath="$PROJECT_DIR$/circularImageView/circularImageView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stevieBAudioBook/stevieBAudioBook.iml" filepath="$PROJECT_DIR$/stevieBAudioBook/stevieBAudioBook.iml" />
+    </modules>
+  </component>
+</project>
+

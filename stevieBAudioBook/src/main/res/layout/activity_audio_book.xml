@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.steviebaudiobook.steviebaudiobook.AudioBookActivity" >
+
+    <com.steviebaudiobook.steviebaudiobook.HorizontalListView
+        android:id="@+id/ab_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+    </com.steviebaudiobook.steviebaudiobook.HorizontalListView>
+
+    <LinearLayout
+        android:id="@+id/pageMarkerHolder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal" >
+
+        <com.steviebaudiobook.steviebaudiobook.PageMarkers
+            android:id="@+id/pageMarkers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </com.steviebaudiobook.steviebaudiobook.PageMarkers>
+
+    </LinearLayout>
+
+</RelativeLayout>

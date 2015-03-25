@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dp_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chapter1"
+    android:orientation="horizontal" >
+
+<LinearLayout
+    android:id="@+id/dp_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/darkerbackgroundoverlay"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dp_bkgd_overlay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+        
+        <ScrollView
+            android:id="@+id/dl_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/dp_button_holder"
+            android:fillViewport="false" >
+
+            <LinearLayout
+                android:id="@+id/dp_scroller_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+            
+
+        <LinearLayout
+            android:id="@+id/dp_title_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dp_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download Chapters"
+                android:textColor="#ffffff"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dp_checkall_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/dp_checkall_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dp_missing_scroller_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/dp_missing_scroller1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/dp_missing_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/dp_button_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="#A8A5A2"
+                android:text="Skip"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/button_dl"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/greywithborder"
+                android:text="Download"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</LinearLayout>
